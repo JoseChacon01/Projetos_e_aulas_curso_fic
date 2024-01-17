@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 2 de formulario</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <!-- parte 01 -->
+        <h2>formularios</h2>
+        <form action="pagina.php" method="POST">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autofocus required/>
+            </p>
+
+            <p>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Somente Numeros" autofocus required/>
+            </p>
+
+            <P>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" autofocus required/>
+            </P>
+
+            <p>
+                <label for="data">Data de nascimento</label>
+                <input type="date" name="data de nascimento" id="data" autofocus required/>
+            </p>
+        
+<!-- parte 02-->
+            <p>Quais marcas de carro você mais gosta?<br/>
+                <input type="checkbox" name="carro[]" value="ford" id="ford"/> 
+                <label for="ford">Ford</label> <br/>
+
+                <input type="checkbox" name="carro[]" value="Fiat" id="fiat"/> 
+                <label for="fiat">Fiat</label> <br/>
+
+                <input type="checkbox" name="carro[]" value="Nissan" id="nissan"/> 
+                <label for="nissan">Nissan</label><br/>
+            </p>
+
+<!--parte 03-->            
+            <p>você prefere:</p>
+            <input type="radio" name="preferencia" value="Carro" id="carro"/>
+            <label for="carro">Carro</label><br/>
+
+            <input type="radio" name="preferencia" value="Moto" id="moto"/>
+            <label for="Moto">Moto</label>
+
+<!--parte 04-->           
+                <p> <label for="estilo">Qual estilo de moto você mais gosta?</p>
+                    <select name="estilo" id="estilo">
+                        <option value="Estrada">Estrada</option>
+                        <option value="Trilha">Trilha</option>
+                        <option value="Harley">Harley</option>
+                    </select>
+               </p>
+
+            <input type="submit" value="Enviar"/>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 01</title>
+    <style type="text/css">
+    .principal
+    {
+        border: 1px solid black;
+        width: 750px;
+        margin: 0 auto; /*dará margens automáticas na esquerda e na direita para centralizar o bloco horizontalmente na tela. margin: 0; Já a margem 0, significa que você não quer margem alguma.*/
+
+    }
+    .superior
+    {
+    background-color: green;
+    padding-top: 2px; /*Distancia entre o texto do elemento e o topo*/
+    padding-bottom: 2px; /*Distancia entre o texto do elemento e a parte de baixo dele*/
+    color: white;
+    }
+    .menu
+    {
+    background-color: blue;
+    width: 250px;   /*determina a largura da área de conteúdo de um elemento. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento.*/
+    padding-top: 2px;
+    padding-bottom: 10px;
+    float: left; /*fazer com que um elemento se posicione na esquerda - Já para fazer com que um elemento fique flutuando na direita, fazemos: float: right. */
+
+    }
+    .conteudo
+    {
+    background-color: yellow;
+    width: 500px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    float: left;
+    }
+    .rodape
+    {
+    clear: both; /*Faz com que o elemento fique abaixo e não ao lado direito, porem, nesse caso ele não teria espaço para ficar do lado, entretanto iria ficar forçando, danificando o ajuste de suas laterais*/
+    background-color: gray;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    }
+
+
+    </style>
+</head>
+<body>
+   <div  class="principal">
+       <div class="superior">
+           <p>superior</p>
+       </div>
+
+       <div class="menu">
+        <p>menu</p>
+       </div>
+
+       <div class="conteudo">
+        <p>conteudo</p>
+       </div>
+       <div class="rodape">
+        <p>rodape</p>
+       </div>
+      
+   </div> 
+</body>
+</html>

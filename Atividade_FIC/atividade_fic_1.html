@@ -1,0 +1,155 @@
+<!DOCTYPe hmtl>
+<html>
+    <head>
+        <title>Deadpool.: Dog Park</title>
+
+        <style type="text/css">
+        
+  body
+{
+    background-image: url(imagens/fundo_cinza.jpg);
+    background-size: 1350px;
+    background-attachment: fixed;
+}
+.alinhar
+{
+    text-align: center;
+}
+
+h1, h3
+{
+    color: brown;
+}
+
+a:link
+{
+    color: royalblue;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: brown;
+}
+
+.reserva
+ {
+     width: 380px;
+     padding: 15px;
+     background-color: rgb(121, 114, 119);
+     float:initial;
+     margin: auto;
+ }
+
+ table
+ {
+     margin: 0 auto;
+ }
+ ul 
+ { display: inline-block; 
+    text-align: left;
+ }
+        
+        </style>
+    </head>
+    <body>
+ <div class="alinhar">
+<h1>Deadpool.: Dog Park</h1>
+<h3>Menu:</h3>
+
+<div class="menu">
+
+     <a href="#capa">Capa /</a>
+   
+    <a href="#descricao">Descrição /</a>
+   
+    <a href="#infor">Informações gerais /</a>
+   
+    <a href="#autor">Sobre o autor /</a>
+   
+    <a href="#recomendacoes">Recomendações /</a>
+   
+    <a href="#reserva">Reserva do livro </a>
+</div> <br/>
+
+<div id="capa">
+<h3>Capa:</h3>
+    <img src="imagens/capa_livro.jpg" alt="imagem da capa do livro: Deadpool: Dog Park."/><br/>
+</div>
+
+<div id="descricao">
+    <h3>Descrição:</h3>
+    <p>Em Deadpool: Dog Park somos apresentados a Wade Wilson, o Deadpool, um dos personagens mais inusitados do Universo Marvel. Neste romance, inédito no Brasil, o Mercenário Tagarela tem uma missão tragicômica: salvar a humanidade de terríveis filhotinhos de cachorro. Ok, falando assim pode até não parecer tão terrível, mas é preciso mencionar que esses fofinhos têm uma tendência um pouco incômoda de transformar-se em monstros gigantes. A Deadpool cabe descobrir quem está por trás desse plano maligno. De preferência, com todos os seus órgãos intactos. Ao leitor cabe deleitar-se com o humor ácido e escrachado de Stefan Petrucha (autor de Jack, o estripador, em Nova York), de preferência sozinho, para não ser flagrado em ataques súbitos de riso.</p><br/>
+</div>
+
+<div id="infor">
+    <h3>Informações gerais:</h3>
+    <ul>
+        <li>Idioma : Português</li>
+      <li>Editora ‏ : ‎ Novo Século; 1ª edição (13 janeiro 2016)</li>
+      <li>Capa comum ‏ : ‎ 288 páginas</li>
+      <li>Idade de leitura ‏ : ‎ 16 anos e acima</li>
+     </ul>
+</div>
+
+<div id="autor">
+      <h3>Sobre o autor:</h3>
+<p>Stefan Petrucha é um escritor americano de quadrinhos e ficção para jovens adultos. Ele escreveu romances gráficos nas séries X-Files e Nancy Drew, além de ficção científica e horror. Durante 13 anos, de 1994 a 2007, Petrucha escreveu histórias para os quadrinhos da Disney publicados pela Egmont. </p>
+</div>
+
+<div id="recomendacoes">
+<h3>Recomendações:</h3>
+<table border="2" cellspacing="1">
+    <tr>
+    <th><a href="https://www.amazon.com.br/Capit%C3%A3o-Am%C3%A9rica-Des%C3%ADgnios-Stefan-Petrucha/dp/8542814924/ref=pd_lpo_3?pd_rd_i=8542814924&psc=1">Capitão América: desígnios <br/>sombrios</a></th>
+    <th><a href="https://www.amazon.com.br/Demolidor-Homem-Medo-Paul-Crilley/dp/8542814932/ref=pd_lpo_2?pd_rd_i=8542814932&psc=1">Demolidor: O homem sem <br/>medo: 17</a></th>
+    <th><a href="https://www.amazon.com.br/Homem-Formiga-Inimigo-Natural-Jason/dp/8542806042/ref=pd_lpo_1?pd_rd_i=8542806042&psc=1">Homem- Formiga. Inimigo <br/>Natural</a></th>
+    </tr>
+    
+    <tr>
+        <td>Stefan Petrucha</td>
+        <td>Paul Crilley</td>
+        <td>Jason Starr</td>
+    </tr>
+    <tr>
+        <td><img src="imagens/c_america.jpg" alt="imagem da capa do livro, Capitão Ameriaca: desígnios sombrios." width="200px"/></td>
+        <td><img src="imagens/demolidor.jpg" alt="imagem da capa do livro, Demolidor: O homem sem medo: 17." width="200px"/></td>
+        <td><img src="imagens/homem_f.jpg" alt="imagem da capa do livro, Homem- Formiga. Inimigo Natural." width="200px"/></td>
+    </tr>  
+</table>v  
+</div>
+
+<div id="reserva">
+<h3>Prencha os campos a baixo para realizar a reserva do livro: </h3>
+
+<div class="reserva">
+<form action="resposta.php" method="POST">
+
+<p>
+    <label for="nome">Nome:</label><br/>
+    <input type="text" name="nome" id="nome"/> 
+</p>
+
+<p><label for="emal">E-mail:</label><br/>
+    <input type="email" name="email" id="emal"/>
+</p>
+
+    <p><label for="tele">Telefone:</label><br/>
+        <input type="tel" name="telefone" id="tele" placeholder="(00) 00000-0000"/>
+    </p>
+
+    <input type="submit" value="Enviar"/>
+</form>
+</div>
+</div>
+
+
+</p>
+</div>
+</body>
+
+</html>

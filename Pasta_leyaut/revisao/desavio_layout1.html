@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Layout 02</title>
+        <style type="text/css">
+        h1, h2, h3, p {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            background-color: rgb(25, 143, 133);
+        }
+        .principal2{
+            margin: 0 auto;  /*dará margens automáticas na esquerda e na direita para centralizar o bloco horizontalmente na tela. margin: 0; Já a margem 0, significa que você não quer margem alguma.*/
+            border: 1px solid black; /*borda solida de 1px na cor preta*/
+            width: 750px; /*determina a largura da área de conteúdo de um elemento. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento.*/
+            height: 285px; /*definir a altura dos boxes (a margem da borda para baixo)*/
+        }
+        .cabecalho2{
+            float: top; /*posiciona o elemento no topo*/
+            background-color: red;
+            border: 1px solid black;
+            margin: 5px; /*espaço entre os elementos que ficam acima e abaix0*/
+        }
+        .menu2{
+            float: left; /*fazer com que um elemento se posicione na esquerda - Já para fazer com que um elemento fique flutuando na direita, fazemos: float: right. */
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 50px; /*tamanha do espaço para baixo*/
+            width: 95px;
+            margin: 5px;
+        }
+        .conteudo2{
+            float: left;
+            background-color: blue;
+            border: 1px solid black;
+            padding: 50px;
+            width: 220px;
+            margin: 5px;
+        }
+        .direito{
+            float: left;
+            background-color: moccasin;
+            border: 1px solid black;
+            padding: 50px;
+            width: 95px;
+            margin: 5px;
+        }
+        .rodape2{
+            clear: both;
+            background-color: white;
+            border: 1px solid black;
+            padding: 1px;
+            margin: 5px;
+        }
+        </style>
+    </head>
+    <body>
+            <div class="principal2">
+                <div class="cabecalho2">
+                    <p>Cabeçalho 2</p>
+                </div>
+                <div class="menu2">
+                    <p>Menu 2</p>
+                </div>
+                <div class="conteudo2">
+                    <p>Centro Conteúdo 2</p>
+                </div>
+                <div class="direito">
+                    <p>Lado Direito 2</p>
+                </div>
+                <div class="rodape2">
+                    <p>Rodapé 2</p>
+                </div>
+            </div>
+        </div>                  
+    </body>
+</html>

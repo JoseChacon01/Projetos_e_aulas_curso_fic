@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vaga de Emprego</title>
+        <meta charset="utf-8"/>
+
+<style type="text/css">
+p.name
+{
+    text-align:center;
+}
+
+</style>
+
+    </head>
+    <body>
+        <h1>Cadastro de candidatos</h1>
+        <form action="https://nic.ifrn.edu.br/autoriaweb/form/formulario2021/registro.php" method="POST" enctype="multipart/form-data">
+            <p class="name">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autofocus required/> 
+            </p>
+
+            <p class="name">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Formato:  000.000.000-00" maxlength="14" autofocus required/>
+            </p>
+
+            <p class="name">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" autofocus/>
+            </p>
+
+<!--Parte 2--> 
+            <p><label for="qualidades">Descreva suas qualidades:</label></p>
+                <textarea rows="6" style="Width: 200px;" id="qualidades" name="qualidades"required></textarea>
+        
+<!-- Parte 3-->
+            <p>Qual(is) linguagem(is) você tem conhecimento?<br/>
+                <input type="checkbox" name="linguagem[]" value="HTML" id="html" checked/> 
+                <label for="html">HTML</label> <br/>
+
+                <input type="checkbox" name="linguagem[]" value="CSS" id="css"/> 
+                <label for="css">CSS</label> <br/>
+
+                <input type="checkbox" name="linguagem[]" value="Java" id="java"/> 
+                <label for="java">Java</label><br/>
+
+                <input type="checkbox" name="linguagem[]" value="PHP" id="php"/> 
+                <label for="php">PHP</label><br/>
+            </p>
+
+<!--Parte 4-->            
+            <p>Você prefere trabalhar na modalidade:</p>
+            <input type="radio" name="trabalho" value="Home Office" id="trabalho" checked/>
+            <label for="trabalho">Home Office</label><br/>
+
+            <input type="radio" name="trabalho" value="Presencial" id="presente"/>
+            <label for="presente">Presencial</label>
+
+<!--Parte 5-->           
+                <p> <label for="so">Qual sistema operacional você utiliza com mais frequência?</p>
+                    <select name="so" id="so">
+                        <option value="Windows">Windows</option>
+                        <option value="Linux">Linux</option>
+                        <option value="iOS">iOS</option>
+                    </select>
+               </p>
+
+<!--Parte 6-->
+                <p>
+                    <label for="foto">Anexe uma foto sua:</label>
+                    <input type="file" name="foto" id="foto"/>
+                </p>
+
+            <input type="submit" value="Enviar"/>
+
+        </form>
+    </body>
+</html>
