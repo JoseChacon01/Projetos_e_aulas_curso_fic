@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de tabelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        td.Center,  th.Center
+        {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <h1>Tabelas estilizadas:</h1>
+    <table class="table table-success table-striped">
+        <tr>
+            <th>Produto</th>
+            <th class="Center">Quantidade minima</th>
+            <th class="Center">Quantidade atual</th>
+        </tr>
+        <tr>
+            <td>Sabão em Pó</td>
+            <td class="Center">25</td>
+            <td class="Center">27</td>
+        </tr>
+        <tr>
+            <td>Esponja de aço</td>
+            <td class="Center">22</td>
+            <td class="Center">19</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="container-fluid">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Dados cadastrais</th>
+              </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th>Nome</th>
+            <th class="Center">Idade</th>
+            <th class="Center">CPF</th>
+            <th class="Center">Endereço</th>
+            <th class="Center">Telefone</th>
+          </tr>
+          <tr>
+            <td>Pedro da Silva Costa</td>
+            <td class="Center">19</td>
+            <td class="Center">000.100.000.1X</td>
+            <td class="Center">Rua Princesa Isabel, 132</td>
+            <td class="Center">(00)90000-0000</td>
+          </tr>
+          <tr>
+            <td>Kaio Oliveira Pereira</td>
+            <td class="Center">31</td>
+            <td class="Center">000.300.000.1X</td>
+            <td class="Center">Rua da Moeda, 12</td>
+            <td class="Center">(xx)xxxxx-xxxx</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+<div class="container-fluid">
+    <table class="table table-striped">
+        <tr>
+            <th>Nome</th>
+            <th class="Center">Idade</th>
+            <th class="Center">CPF</th>
+        </tr>
+        <tr>
+            <td>João Carlos</td>
+            <td class="Center">25</td>
+            <td class="Center">000.000.000-00</td>
+        </tr>
+        <tr>
+            <td>Ralfael Oliveira</td>
+            <td class="Center">22</td>
+            <td class="Center">000.000.000-XX</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container-fluid">
+    <table class="table table-dark table-sm"> 
+        <tr>
+            <th>Nome</th>
+            <th class="Center">Idade</th>
+            <th class="Center">Profissão</th>
+        </tr>
+        <tr>
+            <td>João Carlos</td>
+            <td class="Center">25</td>
+            <td class="Center">Estudante</td>
+        </tr>
+        <tr>
+            <td>Ralfael Oliveira</td>
+            <td class="Center">22</td>
+            <td class="Center">Pedreiro</td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
